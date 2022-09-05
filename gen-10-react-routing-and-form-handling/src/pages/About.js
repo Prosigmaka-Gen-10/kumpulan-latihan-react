@@ -8,10 +8,22 @@ export default function About () {
 	return <>
 		<p>Ini About</p>
 		
-		<Outlet />
+		
 		
 		<Link to="/">
 			Kembali ke halaman home
 		</Link>
+		<hr />
+		<nav> 
+			<Link to='/about/sejarah'>
+				Ke Sejarah
+			</Link>
+			<span> </span>
+			<Link to='/about/kontak'>
+				Ke Kontak
+			</Link>
+		</nav>
+
+		<Outlet />
 	</>
 }
